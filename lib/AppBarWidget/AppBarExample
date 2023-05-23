@@ -1,0 +1,16 @@
+https://www.tutorialkart.com/flutter/flutter-appbar/
+
+appBar: AppBar(
+        title: const Text('AppBar Tutorial'),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.add_alert),
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('You pressed bell icon.')));
+            },
+          ),
+        ],
+      ),
+
+
