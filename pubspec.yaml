@@ -21,6 +21,7 @@ dependencies:
   volume_controller: ^2.0.6
   flutter_launcher_icons: ^0.13.0
   curved_navigation_bar: ^1.0.3 #latest version
+  sensors_plus: ^1.2.2
 
 
 dev_dependencies:
