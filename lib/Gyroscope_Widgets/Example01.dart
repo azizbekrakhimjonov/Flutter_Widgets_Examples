@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 
-// flutter pub get sensors_plus: ^1.2.2
+// sensors_plus: ^1.2.2
 
 Future<void> main() async {
   runApp(MyApp());
