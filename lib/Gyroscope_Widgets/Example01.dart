@@ -3,11 +3,11 @@ import 'package:sensors_plus/sensors_plus.dart';
 
 // sensors_plus: ^1.2.2
 
-Future<void> main() async {
-  runApp(MyApp());
-}
+// Future<void> main() async {
+//   runApp(MyApp());
+// }
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,13 +16,12 @@ class MyApp extends StatelessWidget{
   }
 }
 
-class Home extends StatefulWidget{
+class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
-
   double x = 0, y = 0, z = 0;
   String direction = "none";
 
@@ -37,26 +36,24 @@ class _HomeState extends State<Home> {
 
       //rough calculation, you can use
       //advance formula to calculate the orentation
-      if(x > 0){
+      if (x > 0) {
         direction = "back";
-      }else if(x < 0){
+      } else if (x < 0) {
         direction = "forward";
-      }else if(y > 0){
+      } else if (y > 0) {
         direction = "left";
-      }else if(y < 0){
+      } else if (y < 0) {
         direction = "right";
       }
 
-      setState(() {
-
-      });
+      setState(() {});
     });
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text("Gyroscope Sensor in Flutter"),
         backgroundColor: Colors.redAccent,
@@ -64,13 +61,33 @@ class _HomeState extends State<Home> {
       body: Container(
           alignment: Alignment.center,
           padding: EdgeInsets.all(30),
-          child: Column(
-              children:[
-                Text(direction, style: TextStyle(fontSize: 30),)
-              ]
-          )
-      ),
-
+          child: Column(children: [
+            Text(
+              direction,
+              style: TextStyle(fontSize: 30),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              "X: $x",
+              style: TextStyle(fontSize: 15),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              "Y: $y",
+              style: TextStyle(fontSize: 15),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              "Z: $z",
+              style: TextStyle(fontSize: 15),
+            ),
+          ])),
     );
   }
 }

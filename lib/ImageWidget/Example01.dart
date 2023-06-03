@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget{
         body:
         Column(
               children: [
-                Image.asset('assets/images/mit.png'),
+                Image.asset('assets/image2.png'),
                 // Image.network(
                 // 'https://picsum.photos/id/1074/400/400',
                 // ),

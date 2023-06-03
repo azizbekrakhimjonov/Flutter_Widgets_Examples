@@ -22,6 +22,10 @@ dependencies:
   flutter_launcher_icons: ^0.13.0
   curved_navigation_bar: ^1.0.3 #latest version
   sensors_plus: ^1.2.2
+  libphonenumber_plugin: ^0.3.1
+  chat_bubbles: ^1.4.1
+  connectivity_plus: ^2.2.1
+
 
 
 dev_dependencies:

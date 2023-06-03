@@ -33,10 +33,10 @@ class MyCustomForm extends StatelessWidget {
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
           child: TextField(
-            decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              hintText: 'Enter a search term',
-            ),
+            // decoration: InputDecoration(
+            //   border: OutlineInputBorder(),
+            //   hintText: 'Enter a search term',
+            // ),
           ),
         ),
         Padding(
