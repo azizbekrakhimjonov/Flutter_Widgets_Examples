@@ -17,8 +17,13 @@ import 'package:flutter/material.dart';
 // import 'Calendar_Widget/Example01.dart';
 // import 'DataRange_Widget/Example01.dart';
 // import 'AnotherApps/Chatting.dart';
-import 'Gyroscope_Widgets/Example01.dart';
+// import 'Gyroscope_Widgets/Example01.dart';
+// import 'CheckConnactions/InternetConnactions.dart';
+// import 'AnotherApps/ChatApp.dart';
+// import 'AnotherApps/ChatClass.dart';
+
+// import 'AnotherApps/ChatApp01.dart';
+import 'Dialog_Widget/Example01.dart';
 void main() {
   runApp(MyApp());
 }
-
