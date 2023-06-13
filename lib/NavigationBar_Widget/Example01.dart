@@ -48,7 +48,6 @@ class _MyHomePageState extends State<MyHomePage> {
           Icon(Icons.delete, size: 30),
         ],
         onTap: (index) {
-          //Handle button tap
         },
       ),
       body: Container(color: Colors.blueAccent),

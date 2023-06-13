@@ -23,7 +23,7 @@ import 'package:flutter/material.dart';
 // import 'AnotherApps/ChatClass.dart';
 
 // import 'AnotherApps/ChatApp01.dart';
-import 'Dialog_Widget/Example01.dart';
+import 'Gyroscope_Widgets/Example01.dart';
 void main() {
   runApp(MyApp());
 }

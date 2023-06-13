@@ -1,0 +1,17 @@
+  TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+                prefixIcon: const Icon(Icons.security),
+                labelText: 'Password',
+                labelStyle:
+                    TextStyle(color: Colors.blueAccent, fontSize: 18),
+                // filled: true,
+                // fillColor: Colors.lightBlue,
+                focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(50),
+                    borderSide:
+                        BorderSide(color: Colors.blueAccent, width: 2)),
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    borderSide: BorderSide(color: Colors.black, width: 2))),
+            );
