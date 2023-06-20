@@ -1,0 +1,4 @@
+  google_fonts: any
+  animate_do: ^2.1.0
+  flutter_slidable: ^2.0.0
+  quickalert: ^1.0.0
