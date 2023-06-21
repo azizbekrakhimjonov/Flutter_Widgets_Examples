@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
       height: double.infinity,
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('assets/img.png'), fit: BoxFit.cover),
+            image: AssetImage('assets/img_0.png'), fit: BoxFit.cover),
       ),
       child: Container(
         child: Container(
