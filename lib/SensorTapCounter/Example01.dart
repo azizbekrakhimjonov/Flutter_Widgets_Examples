@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+void main(){
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,9 +16,7 @@ class MyApp extends StatelessWidget {
     );
   }
 
-LongPress() {
-  print('LongPress');
-}
+
 
 OnTab() {
   print('OnTab');
@@ -23,6 +24,10 @@ OnTab() {
 
 OnDouble() {
   print('DoubleTab');
+}
+
+LongPress() {
+  print('LongPress');
 }
 
 }
