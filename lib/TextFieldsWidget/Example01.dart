@@ -14,8 +14,7 @@ class MyHomePage extends StatefulWidget{
 
 class LoginPage extends State<MyHomePage> {
   final email = TextEditingController();
-  var email1 = 'asfhwd flgj';
-  var pass = 'gsdfgds.f';
+  var email1 = '';
   @override
   void dispose(){
     email.dispose();

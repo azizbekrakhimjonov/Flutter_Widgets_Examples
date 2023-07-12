@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+
+void main()=>runApp(MyApp());
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -22,9 +25,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   final List<String> myData = <String>[
     'Azizbek', 'Samandar', 'Ilhomxoja', 'Muhammad', 'Suhrob', 'Tom',
-    'John', 'Jecson', 'Maria', 'Tomsion', 'Jerry', 'Mikle', 'Andrey','A', 'b'
+    'John', 'Jecson', 'Maria', 'Tomsion', 'Jerry', 'Mikle', 'Andrey','A', 'b', 'David'
   ];
-  final List<int> colorCodes = <int>[600,500,100,50,600,500,100,50,600,500,100,50,70,50,70];
+  final List<int> colorCodes = <int>[600,500,100,50,600,500,100,50,600,500,100,50,70,50,70, 500];
 
 
   @override
@@ -41,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
             itemBuilder: (BuildContext context, int index) {
               return Container(
                 height: 50,
-                color: Colors.amber[colorCodes[index]],
+                // color: Colors.amber[colorCodes[index]],
                 child: Center(child: Text('Entry ${myData[index]}')),
               );
             },

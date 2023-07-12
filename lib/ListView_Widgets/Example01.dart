@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -125,6 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text('option1'),
             ),
           ),
+
           SizedBox(height: 10,),
           Container(
             width: 14,
