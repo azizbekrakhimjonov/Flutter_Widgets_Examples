@@ -40,24 +40,66 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Telegram"),
+
       ),
       body: Container(
         width: double.infinity,
         height: double.infinity,
         child: ListView.separated(
-            padding: EdgeInsets.all(10),
+            // padding: EdgeInsets.all(10),
             itemBuilder: (BuildContext context, int index) {
-              return Container(
-                color: Colors.orange[colorsCode[index]],
-                  height: 45, child: Center(child: Text(mydata[index])));
+              return GestureDetector(
+                onTap: () {
+                  print(mydata[index]);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SecondPage()));
+                },
+                child: Container(
+                    color: Colors.orange[colorsCode[index]],
+                    height: 55,
+                    child: Row(
+                      children: [
+                        CircleAvatar(),
+                        Center(child: Text(mydata[index]))
+                      ],
+                    )
+                ),
+              );
             },
             separatorBuilder: (BuildContext context, int index) =>
-                const Divider(),
+                const Divider(height: 0,),
             itemCount: mydata.length),
       ),
     );
   }
+
 }
+
+class SecondPage extends StatelessWidget {
+  const SecondPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Next page'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Go back!'),
+        ),
+      ),
+    );
+  }
+}
+
+

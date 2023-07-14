@@ -28,7 +28,7 @@ dependencies:
   image_picker: ^0.8.8
   google_fonts: any
   animate_do: ^2.1.0
-  flutter_slidable: ^2.0.0
+  flutter_slidable: ^3.0.0
   quickalert: ^1.0.0
   video_player: ^2.6.1
   flutter_zoom_drawer: ^3.1.1
