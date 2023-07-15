@@ -35,6 +35,8 @@ dependencies:
   get: ^4.6.5
   stylish_bottom_bar: ^1.0.3
   collapsible_sidebar: ^2.0.5+1
+  iconsax: ^0.0.8
+
 
 
 
