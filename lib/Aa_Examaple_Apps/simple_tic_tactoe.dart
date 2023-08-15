@@ -114,7 +114,7 @@ class _FinalViewState extends State<FinalView> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Hi Amir!',
+                'Tic Tac Toe',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 35,

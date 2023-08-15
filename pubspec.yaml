@@ -1,4 +1,4 @@
-name: flutter_widget_lessons
+name: flutter_widget_example
 description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -16,7 +16,7 @@ dependencies:
   csv: ^5.0.2
   flutter_gif: ^0.0.4
   sqflite: ^2.2.2
-  path_provider: ^2.0.11
+  path_provider: ^2.0.15
   path: ^1.8.2
   volume_controller: ^2.0.6
   flutter_launcher_icons: ^0.13.0
@@ -36,7 +36,11 @@ dependencies:
   stylish_bottom_bar: ^1.0.3
   collapsible_sidebar: ^2.0.5+1
   iconsax: ^0.0.8
-
+  tab_container: ^2.0.0
+  flutter_vector_icons: ^2.0.0
+  qr_flutter: ^4.1.0
+  web_browser: ^0.7.4
+  flutter_web_browser: ^0.17.1
 
 
 

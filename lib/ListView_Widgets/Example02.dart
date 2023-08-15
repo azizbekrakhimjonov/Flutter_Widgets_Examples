@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 void main()=>runApp(MyApp());
 
@@ -23,12 +24,23 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  final List<String> myData = <String>[
-    'Azizbek', 'Samandar', 'Ilhomxoja', 'Muhammad', 'Suhrob', 'Tom',
-    'John', 'Jecson', 'Maria', 'Tomsion', 'Jerry', 'Mikle', 'Andrey','A', 'b', 'David'
-  ];
-  final List<int> colorCodes = <int>[600,500,100,50,600,500,100,50,600,500,100,50,70,50,70, 500];
+  final List<String> myData = <String>[];
 
+
+  var count = 0;
+
+  void _addListTile(){
+    setState(() {
+      myData.add("Item ${count++}");
+      print(myData);
+    });
+  }
+
+  void _remuveItem(int index){
+    setState(() {
+      myData.removeAt(index);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,19 +49,34 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('ListView'),
       ),
       body: Container(
-        color: Colors.lightGreen,
-        child:  ListView.separated(
-            padding: const EdgeInsets.all(8),
-            itemCount: myData.length,
-            itemBuilder: (BuildContext context, int index) {
-              return Container(
-                height: 50,
-                // color: Colors.amber[colorCodes[index]],
-                child: Center(child: Text('Entry ${myData[index]}')),
-              );
-            },
-            separatorBuilder: (BuildContext context, int index) => const Divider(),
-          ),
+        color: Color(0xffa5a5a5),
+        child: Column(
+          children: [
+            Expanded(
+                child: ListView.builder(
+                    itemCount: myData.length,
+                    itemBuilder: (context, index){
+                      return ListTile(
+                        leading: const CircleAvatar(
+                            backgroundImage:
+                            NetworkImage('https://images.pexels.com/photos/17305999/pexels-photo-17305999.jpeg',)
+                        ),
+                        onLongPress: (){
+                          _remuveItem(index);
+                          print(myData);
+                        },
+                        title: Center(child: Text(myData[index])),
+                      );
+                    }
+                ),
+            ),
+          ],
+
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _addListTile,
+        child: Icon(Icons.add),
       ),
     );
   }
@@ -57,5 +84,4 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 
-// color: Colors.amber[colorCodes[index]],
 
